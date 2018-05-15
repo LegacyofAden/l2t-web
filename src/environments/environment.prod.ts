@@ -1,3 +1,5 @@
+
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: 'http://l2tenkai.club:8087'
 };
