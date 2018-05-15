@@ -49,4 +49,5 @@ import {PopulationComponent} from './component/population/population.component';
   providers: [GameserverService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

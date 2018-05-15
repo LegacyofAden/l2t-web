@@ -1,7 +1,11 @@
 <h1>Player population</h1>
-<div style="display: block">
-  <canvas baseChart
-          [data]="chartData"
+<div *ngIf="chartLabels" style="display: block">
+  <canvas *ngIf="chartLabels.length > 0"
+          baseChart
           [labels]="chartLabels"
+          [data]="chartData"
           chartType="doughnut"></canvas>
+  <p *ngIf="chartLabels.length == 0">
+    There are no players online at the moment.
+  </p>
 </div>

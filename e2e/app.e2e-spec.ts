@@ -1,4 +1,4 @@
-import { L2tWebPage } from './app.po';
+import {L2tWebPage} from './app.po';
 
 describe('l2t-web App', () => {
   let page: L2tWebPage;

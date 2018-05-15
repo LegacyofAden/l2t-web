@@ -8,22 +8,21 @@ import {GameserverService} from '../../service/gameserver.service';
 })
 export class PopulationComponent implements OnInit {
 
-  chartLabels: string[] = [];
-  chartData: number[] = [];
+  chartLabels: string[] = null;
+  chartData: number[] = null;
 
   constructor(private gameserverService: GameserverService) {
   }
 
   ngOnInit() {
-    const x = this.gameserverService.getPopulation()
-      .subscribe(population => {
-        this.chartLabels = [];
-        this.chartData = [];
-        for (const classPopulation of population) {
-          this.chartLabels.push(classPopulation.className);
-          this.chartData.push(classPopulation.count);
-          console.log(classPopulation);
-        }
-      });
+    this.gameserverService.getPopulation().subscribe(population => {
+      this.chartLabels = [];
+      this.chartData = [];
+      for (const classPopulation of population) {
+        this.chartLabels.push(classPopulation.className);
+        this.chartData.push(classPopulation.count);
+        console.log(classPopulation);
+      }
+    });
   }
 }
