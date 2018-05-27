@@ -10,15 +10,18 @@ import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './component/app.component';
 import {PopulationComponent} from './component/population/population.component';
+import {LoginComponent} from './component/login/login.component';
 
 /**
  * @author Pere
  * @since 30/07/2017
  */
+
 const routes: Routes = [
   {path: '', component: AppComponent},
-  {path: 'population', component: PopulationComponent}
-];
+  {path: 'population', component: PopulationComponent},
+  {path: 'login', component: LoginComponent}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
