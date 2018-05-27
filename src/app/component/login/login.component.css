@@ -1,11 +1,10 @@
 
 .login-container {
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
 .login-card {
-  width: 35%;
+  width: 300px;
 }
 
 mat-card, mat-toolbar {
@@ -15,17 +14,4 @@ mat-card, mat-toolbar {
 mat-card > mat-toolbar {
   margin: -24px 0 24px -24px;
   width: calc(100% + 48px);
-}
-
-.example-right-align {
-  text-align: right;
-}
-
-input.example-right-align::-webkit-outer-spin-button,
-input.example-right-align::-webkit-inner-spin-button {
-  display: none;
-}
-
-input.example-right-align {
-  -moz-appearance: textfield;
 }
