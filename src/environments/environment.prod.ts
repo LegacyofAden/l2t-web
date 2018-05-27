@@ -1,5 +1,5 @@
 
 export const environment = {
   production: true,
-  apiUrl: 'http://l2tenkai.club:8087'
+  apiUrl: 'http://88.198.39.69:8087'
 };
